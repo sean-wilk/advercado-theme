@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+/***
+#menu-item-657 > .sub-menu {
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#menu-item-657 > .sub-menu a {
+    opacity: 1 !important;
+}
+***/
+
+ul.thb-full-menu li.menu-item-mega-parent {
+  position: unset;
+
+  &.sfHover {
+    > ul.sub-menu {
+      display: grid !important;
+    }
+  }
+
+  a::before {
+    border-bottom: 1px solid $primary-color;
+  }
+
+  > ul.sub-menu {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+    width: 100vw;
+    min-width: 100vw;
+    position: absolute;
+    margin-top: 0px;
+    top: 70px;
+    left: 0;
+    box-shadow: none;
+    border-top: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+
+    .mega-menu-title {
+      > a {
+        font-size: 18px;
+        line-height: 1;
+        color: $primary-color;
+      }
+
+      > .sub-menu {
+        li {
+          margin-bottom: 8px;
+          > a {
+            white-space: break-spaces;
+            text-transform: none;
+            font-size: 14px;
+            line-height: 1;
+          }
+        }
+      }
+    }
+
+    li > a {
+      white-space: break-spaces;
+      text-transform: none;
+      font-size: 12px;
+    }
+  }
+}
+
+html .header {
+  z-index: 2000;
+
+  > .row {
+    position: static;
+  }
+
+  .logolink .logoimg.desktop-logo {
+    display: block;
+  }
+
+  .logolink .logoimg.mobile-logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: map-get($breakpoints, desktop) - 1) {
+  html .header {
+    padding: 22px 0;
+    background-color: #ffffff;
+
+    .logolink .logoimg.desktop-logo {
+      display: none;
+    }
+
+    .logolink .logoimg.mobile-logo {
+      display: block;
+    }
+  }
+
+  .side-panel {
+    .side-panel-content {
+      padding-top: 80px !important;
+    }
+  }
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

@@ -1,0 +1,277 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for default posts
+// -----------------------------------------------------------------------------
+
+.dokan-dashboard {
+  .dokan-dashboard-wrap {
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+
+    .dokan-dash-sidebar {
+      background-color: $transparent;
+
+      ul.dokan-dashboard-menu {
+        background-color: $dark-green;
+
+        li {
+          background-color: $dark-green;
+          transition: background-color 0.25s ease-in;
+          border: none !important;
+
+          &:hover, &.active {
+            background-color: $primary-color;
+          }
+
+          &.active:after {
+            display: none;
+          }
+        }
+
+        li.dokan-common-links a {
+          border: none !important;
+          &:hover, &.active {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .dokan-dashboard-content {
+      article.dashboard-content-area {
+        .dashboard-widget {
+          padding-left: 0;
+          padding-right: 0;
+
+          .widget-title {
+            padding: 8px 16px;
+            background-color: $primary-color;
+            color: $white;
+
+            i, a {
+              color: $white;
+            }
+          }
+
+          & > * {
+            padding: 8px 16px;
+          }
+
+          &.orders .content-half-part {
+            padding: 8px 16px;
+          }
+        }
+      }
+    }
+
+    header.dokan-dashboard-header {
+      h1 {
+        font-size: 36px;
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color-50;
+      }
+    }
+
+  }
+}
+
+body .dokan-progress-bar-info {
+  background-color: $primary-color;
+}
+
+html body .dokan-alert-info {
+  background-color: $pastel-blue;
+  border-color: $accent-color;
+  color: $accent-color;
+}
+
+html .select2.select2-container--default {
+  margin-bottom: 0;
+}
+
+html .dokan-form-horizontal {
+  .dokan-form-group {
+    margin-left: 0 !important;
+  }
+}
+
+html .dokan-form-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .dokan-control-label {
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"] {
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+  }
+
+  input, select, span {
+    margin-right: 8px;
+  }
+}
+
+input[value="Cancel"].dokan-btn {
+  height: 42px;
+}
+
+div#ui-datepicker-div {
+  z-index: 999 !important;
+  width: auto;
+}
+
+.ui-datepicker td {
+  padding: 1px !important;
+}
+
+.report-filter label {
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+.dokan-product-listing-area > .dokan-w12 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+  .dokan-product-date-filter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .dokan-form-group {
+      margin-bottom: 0;
+    }
+  }
+
+  .dokan-product-search-form {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    input {
+      padding: 4px 6px !important;
+      border-radius: 0;
+      color: #555555;
+      display: block;
+      font-size: 14px;
+      min-height: 26px;
+      line-height: 26px;
+      height: auto;
+    }
+  }
+
+  > .dokan-form-inline {
+    width: auto !important;
+  }
+
+}
+
+html input[type="submit"].dokan-btn, html a.dokan-btn, html .dokan-btn {
+  height: 100%;
+}
+
+html .select2-container--default.select2-container--focus .select2-selection--multiple {
+  height: auto;
+}
+
+html .select2.select2-container--default {
+  height: auto;
+}
+
+html .select2-container .select2-search--inline .select2-search__field {
+  margin-top: 0px;
+}
+
+html .dokan-dashboard .select2-container {
+    z-index: 1100;
+}
+
+#dokan_comments-form {
+  .dokan-btn {
+    margin-top: 16px;
+  }
+}
+
+#profile-form {
+  > .dokan-form-group {
+    margin: 16px auto;
+    .dokan-w5 {
+      width: 80%;
+
+      .dokan-form-group {
+        flex-flow: row nowrap;
+
+        .dokan-input-group-addon {
+          position: relative;
+          height: 32px;
+          width: 32px;
+          margin-right: 0;
+
+          i {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+
+    .dokan-text-left {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.store-open-close {
+  > div {
+    .dokan-form-group {
+      flex-flow: row wrap;
+
+      label.day {
+          width: 100%;
+      }
+    }
+  }
+}
+
+html #dokan-store-listing-filter-wrap .right .item select {
+    padding: 0px 20px;
+    background: #fff url("../north-wp/assets/img/select_arrow.png") calc(100% - 22px) 14px no-repeat;
+    background-size: 7px 4px;
+}
+
+@media all and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+  html .dokan-dashboard .dokan-dash-sidebar #dokan-navigation {
+    background: $primary-color;
+  }
+
+  html .dokan-dashboard .dokan-dash-sidebar #dokan-navigation > input:checked + ul.dokan-dashboard-menu {
+    background: $primary-color;
+  }
+}
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

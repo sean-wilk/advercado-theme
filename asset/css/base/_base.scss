@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+.show-mobile {
+  display: none !important;
+}
+
+.show-desktop {
+  display: block !important;
+}
+
+@media all and (max-width: map-get($breakpoints, desktop) - 1) {
+  #wrapper [role="main"] {
+    margin-top: 112px;
+  }
+
+  .show-mobile {
+    display: block !important;
+  }
+
+  .show-desktop {
+    display: none !important;
+  }
+}

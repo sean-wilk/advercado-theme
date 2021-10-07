@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hero section component.
+// -----------------------------------------------------------------------------
+
+.dokan-panel.advercado-welcome-message {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px;
+
+  h2 {
+    font-weight: 600;
+    color: $primary-color;
+  }
+
+  h4 {
+    color: $dark-grey;
+  }
+}
+
+@media all and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

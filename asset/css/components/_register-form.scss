@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the register form
+// -----------------------------------------------------------------------------
+
+.woocommerce-page .form-row.vendor-customer-registration {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 32px auto;
+}
+
+.login-page-form li {
+  margin-bottom: 0;
+}
+
+.woocommerce .woocommerce-form-login .button, .thb-register-form .button {
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.woocommerce-page .woocommerce-privacy-policy-text {
+  margin-bottom: 32px;
+}
+
+.woocommerce-page .form-row.vendor-customer-registration label.radio {
+  width: 45%;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+  padding: 50% 16px 16px 16px;
+  text-align: center;
+  position: relative;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: $primary-color;
+  cursor: pointer;
+
+  &:hover, &.active {
+    background-color: $pastel-yellow;
+  }
+
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &.customer-reg {
+    background-image: url($base-url + "img/customer.svg");
+  }
+
+  &.vendor-reg {
+    background-image: url($base-url + "img/vendor.svg");
+  }
+}

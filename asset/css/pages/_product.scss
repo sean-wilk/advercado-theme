@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for the single product page
+// -----------------------------------------------------------------------------
+
+.advercado-product-photo {
+  flex-direction: row-reverse !important;
+}
+
+.advercado-product-location {
+  margin-top: 32px;
+  > div {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: flex-start;
+  }
+
+  h2 {
+    display: none;
+  }
+}
+
+.single-product {
+  button.button.single_add_to_cart_button {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $primary-color;
+    }
+  }
+
+  div.quantity .qty {
+    border-color: $primary-color;
+  }
+
+  div.quantity .plus, div.quantity .minus {
+    border-color: $primary-color;
+
+    &:before, &:after {
+      background: $primary-color;
+    }
+  }
+}
+
+.advercado-product-info {
+  background-color: $pastel-blue-25;
+  margin: 50px 0;
+  min-height: 320px;
+
+  .woocommerce-tabs {
+    margin: 50px auto;
+  }
+}
+
+.single-product .small-12.columns #dokan-geolocation-locations-map {
+    display: block !important;
+}
+
+#tab-seller_enquiry_form {
+  h3 {
+    text-align: center;
+  }
+  .row .col-md-10 {
+    width: 100%;
+    max-width: 640px;
+    margin: 32px auto;
+
+    form {
+      text-align: center;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for default pages
+// -----------------------------------------------------------------------------
+@media all and (min-width: map-get($breakpoints, desktop)) {
+  body div[role="main"] {
+    padding-top: 94px;
+  }
+
+  body.global_notification_on div[role="main"] {
+    padding-top: 136.4px;
+  }
+}
+
+.page-padding {
+    padding-top: 0 !important;
+}
+
+
+@media all and (max-width: 479px) {
+
+}
+
+@media all and (min-width: 480px) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, tablet)) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

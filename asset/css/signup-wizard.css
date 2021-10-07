@@ -1,0 +1,89 @@
+html:not(.wp-toolbar) {
+  background-color: #f5f5f5 !important;
+  background-image: url('../img/wallet.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 832px) auto;
+  box-sizing: border-box;
+  border-bottom: 4px #3bb273 solid;
+  margin-left: 0;
+  margin-right: 0;
+  min-height: 100vh;
+}
+
+body.wc-setup.dokan-vendor-setup-wizard {
+  margin: 40px auto 40px 64px;
+  max-width: 768px;
+  min-height: calc(100vh - 86px);
+}
+
+@media all and (max-width: 1280px) {
+  html:not(.wp-toolbar) {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: auto 240px;
+    padding-bottom: 240px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  body.wc-setup.dokan-vendor-setup-wizard {
+    margin: 40px auto 40px auto;
+    max-width: 768px;
+    min-height: calc(100vh - 240px);
+  }
+}
+
+body.wc-setup.dokan-vendor-setup-wizard h1, body.wc-setup.dokan-vendor-setup-wizard h2, body.wc-setup.dokan-vendor-setup-wizard h3, body.wc-setup.dokan-vendor-setup-wizard h4 {
+  font-family: brandon-grotesque, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
+}
+
+body.wc-setup.dokan-vendor-setup-wizard {
+    background: #ffffff !important;
+    border-radius: 12px;
+    border: 1px solid #dcdcde;
+    font-family: Karla, 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
+}
+
+body.wc-setup.dokan-vendor-setup-wizard .wc-setup-content {
+  margin-bottom: 0;
+  border-radius: 0 0 12px 12px;
+  box-shadow: none;
+}
+
+body.wc-setup.dokan-vendor-setup-wizard .wc-return-to-dashboard {
+  padding: 16px;
+  display: block;
+}
+
+.wc-setup.dokan-vendor-setup-wizard .wc-setup-steps li.done::before, .wc-setup.dokan-vendor-setup-wizard .wc-setup-steps li.active::before {
+    background: #3bb273;
+    border-color: #3bb273;
+}
+
+.wc-setup.dokan-vendor-setup-wizard .wc-setup-steps li.done, .wc-setup.dokan-vendor-setup-wizard .wc-setup-steps li.active {
+    color: #3bb273;
+    border-color: #3bb273;
+}
+
+.wc-setup.dokan-vendor-setup-wizard #wc-logo img {
+    max-width: 320px;
+    padding: 16px;
+}
+
+.wc-setup.dokan-vendor-setup-wizard .wc-setup-content .checkbox input[type="checkbox"]:checked + label::before {
+    background: #3bb273;
+    border-color: #3bb273;
+}
+
+.wc-setup.dokan-vendor-setup-wizard .wc-setup-actions .button-primary {
+    color: #fff;
+    background: #3bb273;
+    border-color: #3bb273;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 0 #3bb273;
+    text-shadow: 0 -1px 1px #3bb273, 1px 0 1px #3bb273, 0 1px 1px #3bb273, -1px 0 1px #3bb273;
+}
+
+.wc-setup.dokan-vendor-setup-wizard .wc-setup-actions .button.store-step-skip-btn, .wc-setup.dokan-vendor-setup-wizard .wc-setup-actions .button.not-right-now-btn {
+    display: none;
+}

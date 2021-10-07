@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer.dark {
+  background-color: $primary-color !important;
+
+  .columns {
+    padding-right: 40px;
+  }
+
+  .menu-item a {
+    font-size: 16px;
+  }
+
+  .widget_media_image {
+    max-width: 224px;
+    margin-bottom: 40px;
+  }
+
+  .widget_nav_menu {
+    h6 {
+      font-size: 18px;
+      border-bottom: 2px solid #fff;
+      padding: 8px 0;
+      display: inline-block;
+      min-width: 160px;
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .footer.style2 {
+    text-align: center;
+
+    .widget_media_image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wp-block-wpzoom-blocks-social-icons {
+      justify-content: center !important;
+    }
+  }
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+}
+
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

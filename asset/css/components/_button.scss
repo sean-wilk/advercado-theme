@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+html a.dokan-btn-theme, html .dokan-btn-theme, html input[type="submit"].dokan-btn-theme {
+  color: $white;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+html .shop_bar #thb-shop-filters {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  color: $white;
+  svg {
+    fill: $white;
+  }
+}
+
+html .shop_bar #thb-shop-filters:hover {
+  background-color: $accent-2-color;
+}

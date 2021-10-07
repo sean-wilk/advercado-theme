@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the about page template.
+// -----------------------------------------------------------------------------
+
+.headshot .vc_column-inner {
+  background-position: top center !important;
+}
+
+@media all and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+  .owl-next {
+    right: 0 !important;
+  }
+
+  .owl-prev {
+    left: 0 !important;
+  }
+}
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

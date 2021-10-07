@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Lato', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Measurements
+
+/// Header Height
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$header-height: (
+  'mobile': 64px,
+  'desktop': 100px,
+) !default;
+
+/// Container Width
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$container-width: (
+  'mobile': 750px,
+  'tablet': 970px,
+  'desktop': 1170px,
+) !default;
+
+
+$primary-color: #3bb273 !default;
+$primary-color-25: rgba(59, 178, 115, 0.25) !default;
+$primary-color-50: rgba(59, 178, 115, 0.5) !default;
+$primary-color-75: rgba(59, 178, 115, 0.75) !default;
+$secondary-color: #fdba00 !default;
+$accent-color: #1e91d6 !default;
+$accent-2-color: #dd3b0f !default;
+
+$white: #ffffff !default;
+$off-white: #fcfcfc !default;
+$light-grey: #f5f5f5 !default;
+$medium-grey: #bcbcbc !default;
+$dark-grey: #464646 !default;
+$black: #000000 !default;
+$transparent: rgba(0,0,0,0) !default;
+
+$pastel-yellow: #fcf0d6 !default;
+$pastel-yellow-50: rgba(252, 240, 214, 0.5) !default;
+$pastel-yellow-25: rgba(252, 240, 214, 0.25) !default;
+$pastel-green: #e2f5ef !default;
+$pastel-green-50: rgba(226, 245, 239, 0.5) !default;
+$pastel-green-25: rgba(226, 245, 239, 0.25) !default;
+$pastel-red: #ffe0dd !default;
+$pastel-red-50: rgba(255, 224, 221, 0.5) !default;
+$pastel-red-25: rgba(255, 224, 221, 0.25) !default;
+$pastel-blue: #e1e7f5 !default;
+$pastel-blue-50: rgba(225, 231, 245, 0.5) !default;
+$pastel-blue-25: rgba(225, 231, 245, 0.25) !default;
+$dark-green: #4E986F !default;
+$dark-green-50: rgba(78, 152, 111, 0.5) !default;
+$dark-green-25: rgba(78, 152, 111, 0.25) !default;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'desktop': 981px,
+  'desktop-xl': 1280px,
+  'admin-bar': 783px,
+  'menu-hide': 841px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/wp-content/themes/advercado/asset/' !default;

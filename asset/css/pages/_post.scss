@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for default posts
+// -----------------------------------------------------------------------------
+
+@media all and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

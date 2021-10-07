@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the contact page template.
+// -----------------------------------------------------------------------------
+@media all and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+}
+
+@media all and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
+
+}
+
+@media all and (max-width: map-get($breakpoints, mobile) - 1) {
+
+}

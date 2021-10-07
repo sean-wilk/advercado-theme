@@ -1,0 +1,164 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the form component.
+// -----------------------------------------------------------------------------
+
+.wpcf7-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .form-field-100 {
+    width: 100%;
+  }
+
+  .wpcf7-submit {
+    min-width: 160px;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .btn-container {
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-field-50 {
+    width: calc(50% - 0.5rem);
+  }
+
+  .form-field {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    input, textarea, select {
+      width: 100%;
+      padding: 1rem 0.5rem;
+      font-size: 1rem;
+      margin: 1rem auto;
+      border: none;
+      border-bottom: 1px solid $primary-color;
+      background-color: $transparent;
+      color: $primary-color;
+
+      &::placeholder {
+        opacity: 0.9;
+      }
+    }
+
+    select {
+      width: 100%;
+      border-bottom: 1px solid $primary-color;
+      background-color: $transparent;
+      color: $primary-color;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .ajax-loader {
+    display: none !important;
+  }
+}
+
+html {
+  input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
+    height: 32px;
+    line-height: 32px;
+  }
+
+  select {
+    background: #fff url("../north-wp/assets/img/select_arrow.png") calc(100% - 22px) 14px no-repeat;
+    background-size: 7px 4px;
+  }
+
+  .dokan-reviews-content .dokan-reviews-area .dokan-comments-wrap select {
+    padding: 0 5px;
+  }
+}
+
+/**** Dokan Bookable Form ****/
+
+.dokan-product-edit-form {
+  .form-accordion {
+    .form-accordion-content {
+      display: none;
+      height: 0;
+      transition: height 0.25s ease-in-out;
+    }
+
+    .form-accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border: 1px solid $white !important;
+      background-color: $primary-color;
+      color: $white;
+      cursor: pointer;
+
+      h4 {
+        color: $white;
+      }
+
+      &:after {
+        display: inline-flex;
+        content: "\f107";
+        font-family: FontAwesome;
+        margin-left: 6px;
+        vertical-align: middle;
+        font-size: 11px;
+        transition: transform 0.25s ease-in-out;
+      }
+    }
+
+    &.active {
+      .form-accordion-content {
+        display: block;
+        height: auto;
+        padding: 24px;
+        background-color: #fafafa;
+      }
+
+      .form-accordion-header {
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .dokan-form-group {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      width: 100%;
+
+      &.content-half-part {
+        width: 50%;
+      }
+    }
+
+    a.sale_schedule  {
+      color: $primary-color;
+    }
+  }
+}
+
+html body .dokan-hide {
+  display: none;
+}
+
+.wc_bookings_calendar_form {
+  max-width: 100%;
+
+  .tablenav {
+    align-items: center;
+    .date_selector {
+      height: auto;
+
+      > div {
+        height: auto;
+      }
+    }
+  }
+
+}
