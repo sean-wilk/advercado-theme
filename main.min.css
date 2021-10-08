@@ -203,7 +203,7 @@ body.global_notification_on div[role="main"]{padding-top:136.4px}
 .show-desktop{display:none !important}
 html .header{padding:22px 0;background-color:#fff}
 html .header .logolink .logoimg.desktop-logo{display:none}
-html .header .logolink .logoimg.mobile-logo{display:block}
+html .header .logolink .logoimg.mobile-logo{display:block;height:48px}
 .side-panel .side-panel-content{padding-top:80px !important}
 }@media all and (max-width:767px){.owl-next{right:0 !important}
 .owl-prev{left:0 !important}
