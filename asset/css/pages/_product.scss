@@ -82,3 +82,7 @@
     color: $primary-color;
   }
 }
+
+.dokan-dashboard .dokan-form-group.dokan-product-type-container.show_if_subscription.show_if_variable-subscription.show_if_simple {
+    display: none !important;
+}
