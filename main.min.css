@@ -120,6 +120,8 @@ html body .dokan-hide{display:none}
 #tab-seller_enquiry_form .row .col-md-10 textarea{width:100%}
 .product-seller-link .details>a{color:#3bb273}
 .dokan-dashboard .dokan-form-group.dokan-product-type-container.show_if_subscription.show_if_variable-subscription.show_if_simple{display:none !important}
+.dokan-w4.ajax_prev.dokan-text-left{margin-left:0 !important;margin-top:16px}
+.dokan-w3.ajax_prev{margin-left:0 !important;text-align:left !important}
 .shop-header-container .shop-header-style2.advercado-shop-header{padding:32px !important;background-color:#3bb273;width:100%;margin-bottom:16px}
 .shop-header-container .shop-header-style2.advercado-shop-header .thb-shop-title,.shop-header-container .shop-header-style2.advercado-shop-header .thb-shop-subtitle{color:#fff;text-align:center}
 .shop-header-container .shop-header-style2.advercado-shop-header .thb-shop-title{margin:0;text-transform:uppercase;font-size:40px;line-height:1.2;margin-bottom:16px}
