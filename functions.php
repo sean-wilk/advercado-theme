@@ -191,14 +191,16 @@ function related_products_latitude( $query, $product_id, $args ){
 
     $dokan_geo_latitude_post  = get_post_meta( $product->id, 'dokan_geo_latitude', true );
 
-    $distance = 10; //distance in km for square block around location
-    $lat_distance = $distance/(2 * 110.574); //convert to co-ordinates
+    if($dokan_geo_latitude_post){
+      $distance = 10; //distance in km for square block around location
+      $lat_distance = $distance/(2 * 110.574); //convert to co-ordinates
 
-    $lat_min = $dokan_geo_latitude_post - $lat_distance;
-    $lat_max = $dokan_geo_latitude_post + $lat_distance;
+      $lat_min = $dokan_geo_latitude_post - $lat_distance;
+      $lat_max = $dokan_geo_latitude_post + $lat_distance;
 
-    $query['join']  .= " INNER JOIN {$wpdb->postmeta} as pm1 ON p.ID = pm1.post_id ";
-    $query['where'] .= " AND pm1.meta_key = 'dokan_geo_latitude' AND pm1.meta_value BETWEEN " . $lat_min . " AND " . $lat_max . " ";
+      $query['join']  .= " INNER JOIN {$wpdb->postmeta} as pm1 ON p.ID = pm1.post_id ";
+      $query['where'] .= " AND pm1.meta_key = 'dokan_geo_latitude' AND pm1.meta_value BETWEEN " . $lat_min . " AND " . $lat_max . " ";
+    }
 
     return $query;
 }
@@ -211,15 +213,17 @@ function related_products_longitude( $query, $product_id, $args ){
     $dokan_geo_longitude_post = get_post_meta( $product->id, 'dokan_geo_longitude', true );
     $dokan_geo_latitude_post  = get_post_meta( $product->id, 'dokan_geo_latitude', true );
 
-    $distance = 10; //distance in km for square block around location
-    $long_distance = $distance/(2 * 111.320 * cos($dokan_geo_latitude_post)); //convert to co-ordinates
+    if( $dokan_geo_longitude_post && $dokan_geo_latitude_post ){
+      $distance = 10; //distance in km for square block around location
+      $long_distance = $distance/(2 * 111.320 * cos($dokan_geo_latitude_post)); //convert to co-ordinates
 
-    $long_min = $dokan_geo_longitude_post - $long_distance;
-    $long_max = $dokan_geo_longitude_post + $long_distance;
+      $long_min = $dokan_geo_longitude_post - $long_distance;
+      $long_max = $dokan_geo_longitude_post + $long_distance;
 
-    $query['join']  .= " INNER JOIN {$wpdb->postmeta} as pm2 ON p.ID = pm2.post_id ";
-    $query['where'] .= " AND pm2.meta_key = 'dokan_geo_longitude' AND pm2.meta_value BETWEEN " . $long_min . " AND " . $long_max . " ";
-
+      $query['join']  .= " INNER JOIN {$wpdb->postmeta} as pm2 ON p.ID = pm2.post_id ";
+      $query['where'] .= " AND pm2.meta_key = 'dokan_geo_longitude' AND pm2.meta_value BETWEEN " . $long_min . " AND " . $long_max . " ";
+    }
+    
     return $query;
 }
 

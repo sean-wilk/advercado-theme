@@ -76,3 +76,9 @@
     }
   }
 }
+
+.product-seller-link {
+  .details > a {
+    color: $primary-color;
+  }
+}
