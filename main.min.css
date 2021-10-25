@@ -134,7 +134,8 @@ html body .dokan-hide{display:none}
 .post-type-archive-product .small-12.columns .dokan-geolocation-location-filters,.post-type-archive-product .small-12.columns #dokan-geolocation-locations-map,.post-type-archive-product .small-12.columns .term-description,.tax-product_cat .small-12.columns .dokan-geolocation-location-filters,.tax-product_cat .small-12.columns #dokan-geolocation-locations-map,.tax-product_cat .small-12.columns .term-description{display:none !important}
 html #dokan-store-listing-filter-wrap{margin:0 35px;background-color:#3bb273;color:#fff;-webkit-box-shadow:none;box-shadow:none}
 html #dokan-store-listing-filter-wrap label{color:#fff}
-html #dokan-store-listing-filter-form-wrap{margin:0 35px;-webkit-box-shadow:none;box-shadow:none;border-bottom:2px solid #3bb273;background-color:#fcfcfc}
+html #dokan-store-listing-filter-wrap .item .dokan-icons,html #dokan-store-listing-filter-wrap .dokan-store-list-filter-button{display:none}
+html #dokan-store-listing-filter-form-wrap{margin:0 35px;-webkit-box-shadow:none;box-shadow:none;border-bottom:2px solid #3bb273;background-color:#fcfcfc;display:block !important}
 html #dokan-store-listing-filter-form-wrap::before{display:none}
 html #dokan-seller-listing-wrap{margin:35px 20px}
 html #dokan-seller-listing-wrap .store-content .store-data-container .featured-favourite{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
