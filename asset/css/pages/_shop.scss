@@ -82,6 +82,10 @@ html #dokan-store-listing-filter-form-wrap {
   &::before {
     display: none;
   }
+
+  .store-lists-other-filter-wrap .store-lists-category .category-box ul {
+    justify-content: flex-start;
+  }
 }
 
 html #dokan-seller-listing-wrap {
