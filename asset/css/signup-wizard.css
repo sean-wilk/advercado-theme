@@ -87,3 +87,7 @@ body.wc-setup.dokan-vendor-setup-wizard .wc-return-to-dashboard {
 .wc-setup.dokan-vendor-setup-wizard .wc-setup-actions .button.store-step-skip-btn, .wc-setup.dokan-vendor-setup-wizard .wc-setup-actions .button.not-right-now-btn {
     display: none;
 }
+
+.wc-setup .wc-setup-content table tr:last-child {
+    display: none;
+}
