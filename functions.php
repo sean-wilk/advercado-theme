@@ -236,13 +236,24 @@ add_filter('woocommerce_product_related_products_heading',function(){
 
 /***************************************************************
 * Changing to local JS version so we can limit Google Places
-* autocomplete to UK only. Update in lines 108-112 of JS File.
+* autocomplete to UK only.
 ***************************************************************/
 
 function dokan_script_update() {
-    wp_deregister_script( 'dokan-geo-filters' );
+  // Product & Homepage Search Scripts - Update in lines 108-112 of JS File.
+  wp_deregister_script( 'dokan-geo-filters' );
 
-    wp_enqueue_script( 'advercado-geo-filters', get_stylesheet_directory_uri() . '/asset/js/separate/advercado-geolocation-filters.min.js', array( 'jquery', 'underscore', 'dokan-maps' ), '1.0.0', true );
+  wp_enqueue_script( 'advercado-geo-filters', get_stylesheet_directory_uri() . '/asset/js/separate/advercado-geolocation-filters.min.js', array( 'jquery', 'underscore', 'dokan-maps' ), '1.0.0', true );
+
+  // Vendor Search Scripts - Update in lines 23-28 of JS File.
+  wp_deregister_script( 'dokan-geo-filters-store-lists' );
+
+  wp_enqueue_script( 'advercado-geo-filters-store-lists', get_stylesheet_directory_uri() . '/asset/js/separate/advercado-geo-filters-store-lists.min.js', array( 'jquery', 'google-maps' ), '1.0.0', true );
+
+  // Product Page Search Scripts - Update in Autocomplete function
+  wp_deregister_script( 'dokan-geolocation' );
+
+  wp_enqueue_script( 'advercado-vendor-dashboard-product-google-maps', get_stylesheet_directory_uri() . '/asset/js/separate/advercado-vendor-dashboard-product-google-maps.min.js', array( 'jquery', 'dokan-maps' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'dokan_script_update' );
 
