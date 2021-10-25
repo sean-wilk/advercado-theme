@@ -223,7 +223,7 @@ function related_products_longitude( $query, $product_id, $args ){
       $query['join']  .= " INNER JOIN {$wpdb->postmeta} as pm2 ON p.ID = pm2.post_id ";
       $query['where'] .= " AND pm2.meta_key = 'dokan_geo_longitude' AND pm2.meta_value BETWEEN " . $long_min . " AND " . $long_max . " ";
     }
-    
+
     return $query;
 }
 
@@ -268,7 +268,6 @@ function wishlist_endpoint_content() {
 function my_account_menu_order() {
 	$menuOrder = array(
 		'orders'              => __( 'Your Orders', 'woocommerce' ),
-		'downloads'           => __( 'Download', 'woocommerce' ),
 		'edit-address'        => __( 'Addresses', 'woocommerce' ),
 		'payment-methods'    	=> __( 'Payment Methods', 'woocommerce' ),
 		'edit-account'    	  => __( 'Account Details', 'woocommerce' ),
