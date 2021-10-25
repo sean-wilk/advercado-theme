@@ -186,7 +186,7 @@ div#ui-datepicker-div{z-index:999 !important;width:auto}
 .dokan-product-listing-area>.dokan-w12 .dokan-product-search-form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-flow:row-reverse nowrap;flex-flow:row-reverse nowrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .dokan-product-listing-area>.dokan-w12 .dokan-product-search-form input{padding:4px 6px !important;border-radius:0;color:#555;display:block;font-size:14px;min-height:26px;line-height:26px;height:auto}
 .dokan-product-listing-area>.dokan-w12>.dokan-form-inline{width:auto !important}
-html input[type="submit"].dokan-btn,html a.dokan-btn,html .dokan-btn{height:100%}
+html input[type="submit"].dokan-btn,html a.dokan-btn,html .dokan-btn,html input[value="Cancel"].dokan-btn{height:100%}
 html .select2-container--default.select2-container--focus .select2-selection--multiple{height:auto}
 html .select2.select2-container--default{height:auto}
 html .select2-container .select2-search--inline .select2-search__field{margin-top:0}
@@ -201,6 +201,8 @@ html .dokan-dashboard .select2-container{z-index:1100}
 .store-open-close>div .dokan-form-group{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap}
 .store-open-close>div .dokan-form-group label.day{width:100%}
 html #dokan-store-listing-filter-wrap .right .item select{padding:0 20px;background:#fff url("../north-wp/assets/img/select_arrow.png") calc(100% - 22px) 14px no-repeat;background-size:7px 4px}
+html .dokan-shipping-settings .dokan-shipping-wrapper .dokan-form-group label{text-align:left}
+html .dokan-shipping-settings .dokan-shipping-wrapper .dokan-form-group .dokan-w4{margin-left:0 !important}
 @media all and (min-width:768px){.home .page-padding{padding-top:0 !important}
 }@media all and (min-width:981px){body div[role="main"]{padding-top:94px}
 body.global_notification_on div[role="main"]{padding-top:136.4px}

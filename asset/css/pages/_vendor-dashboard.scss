@@ -176,7 +176,7 @@ div#ui-datepicker-div {
 
 }
 
-html input[type="submit"].dokan-btn, html a.dokan-btn, html .dokan-btn {
+html input[type="submit"].dokan-btn, html a.dokan-btn, html .dokan-btn, html input[value="Cancel"].dokan-btn {
   height: 100%;
 }
 
@@ -248,6 +248,15 @@ html #dokan-store-listing-filter-wrap .right .item select {
     padding: 0px 20px;
     background: #fff url("../north-wp/assets/img/select_arrow.png") calc(100% - 22px) 14px no-repeat;
     background-size: 7px 4px;
+}
+
+html .dokan-shipping-settings .dokan-shipping-wrapper .dokan-form-group {
+  label {
+    text-align: left;
+  }
+  .dokan-w4 {
+    margin-left: 0 !important;
+  }
 }
 
 @media all and (max-width: map-get($breakpoints, desktop) - 1) {
