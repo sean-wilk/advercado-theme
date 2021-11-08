@@ -23,3 +23,76 @@
     display: none !important;
   }
 }
+
+/*** General Fixes ***/
+
+.dokan-product-edit-form .form-accordion .dokan-linked-product-options .dokan-form-group, .dokan-product-edit-form .form-accordion .dokan-product-inventory .dokan-form-group {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dokan-product-edit-form .form-accordion .dokan-product-shipping-tax .dokan-form-group label, .dokan-product-edit-form .form-accordion .dokan-geolocation-options .dokan-form-group label {
+  width: 100%;
+}
+
+[id^="select2-product_cat-result"][id$="165"], [id^="select2-product_cat-result"][id$="207"] {
+  display: none;
+}
+
+html .select2-container--open .select2-dropdown--below {
+  margin-top: -22px;
+  border-top: 1px solid #151515;
+}
+
+html .select2-container--open .select2-dropdown--above {
+  border-bottom: 1px solid #151515;
+}
+
+.dokan-order-filter-serach .select2.select2-container--default .select2-selection--single, .dokan-order-filter-serach .select2.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 32px;
+  height: 32px;
+}
+
+.dokan-dashboard .dokan-dashboard-wrap .dokan-dashboard-content h3.entry-title, .dokan-dashboard .dokan-dashboard-wrap .dokan-dashboard-content h1.entry-title {
+  font-size: 36px;
+  color: #3bb273;
+  border-bottom: 1px solid rgba(59,178,115,0.5);
+}
+
+html .side-panel {
+  z-index: 9999;
+}
+
+html .archive div#ui-datepicker-div {
+  z-index: 10000 !important;
+}
+
+@media all and (max-width: 767px){
+  .wpcf7-form .form-field-50 {
+    width: 100% !important;
+  }
+
+  .wpcf7-form input, .wpcf7-form select, .wpcf7-form textarea {
+     font-size: 0.8rem !important;
+  }
+}
+
+.dokan-dashboard .dokan-form-group.virtual-checkbox {
+  display: none !important;
+}
+
+#bookings_availability .table_grid, #bookings_pricing .table_grid, .bookings_extension .table_grid {
+  overflow-x: scroll;
+}
+
+#bookings_availability .table_grid .description {
+  padding-right: 128px;
+}
+
+.dokan-dashboard .dokan-dashboard-wrap #_wc_booking_duration {
+  width: 6rem !important;
+}
+
+html .dokan-settings-content .dokan-settings-area .dokan-banner {
+  margin: 32px 0;
+}

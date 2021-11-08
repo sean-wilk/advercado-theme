@@ -19,3 +19,9 @@ $j(document).ready(function(){
   });
 
 });
+
+$j(document).ready(function () {
+  $j(".click-capture").click(function () {
+      $j(".ui-datepicker").css("display","none");
+  });
+});
