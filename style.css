@@ -39,7 +39,7 @@ html .select2-container--open .select2-dropdown--above {
   height: 32px;
 }
 
-.dokan-dashboard .dokan-dashboard-wrap .dokan-dashboard-content h3.entry-title {
+.dokan-dashboard .dokan-dashboard-wrap .dokan-dashboard-content h3.entry-title, .dokan-dashboard .dokan-dashboard-wrap .dokan-dashboard-content h1.entry-title {
   font-size: 36px;
   color: #3bb273;
   border-bottom: 1px solid rgba(59,178,115,0.5);
