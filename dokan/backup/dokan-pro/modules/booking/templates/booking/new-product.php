@@ -193,6 +193,8 @@ if ( ! empty( $_GET['errors'] ) ) {
 
                     </div><!-- .content-half-part -->
 
+                    <?php do_action( 'dokan_booking_edit_after_product_tags', $post, $post_id ); ?>
+
                     <div class="content-half-part featured-image">
 
                         <div class="dokan-new-product-featured-img dokan-feat-image-upload">
