@@ -295,13 +295,13 @@ function wishlist_endpoint_content() {
 function my_account_menu_order() {
 	$menuOrder = array(
 		'orders'              => __( 'Your Orders', 'woocommerce' ),
-		'edit-address'        => __( 'Addresses', 'woocommerce' ),
-		'payment-methods'    	=> __( 'Payment Methods', 'woocommerce' ),
-		'edit-account'    	  => __( 'Account Details', 'woocommerce' ),
+		'bookings'    	      => __( 'Bookings', 'woocommerce' ),
 		'wishlist'    	      => __( 'Wishlist', 'woocommerce' ),
 		'following'    	      => __( 'Vendors', 'woocommerce' ),
+		'edit-account'    	  => __( 'Account Details', 'woocommerce' ),
+		'edit-address'        => __( 'Addresses', 'woocommerce' ),
+		'payment-methods'    	=> __( 'Payment Methods', 'woocommerce' ),
 		'support-tickets'    	=> __( 'Seller Support Tickets', 'woocommerce' ),
-		'bookings'    	      => __( 'Bookings', 'woocommerce' ),
 		'customer-logout'     => __( 'Logout', 'woocommerce' )
 	);
 	return $menuOrder;
@@ -400,8 +400,13 @@ function show_on_edit_page($post, $post_id){
 ?>
  <div class="dokan-form-group">
   <input type="hidden" name="product_range" id="dokan-edit-product-id" value="<?php echo esc_attr( $post_id ); ?>"/>
-  <label for="product_range" class="form-label"><?php esc_html_e( 'Product Range (Nearest Thousand)', 'dokan-lite' ); ?></label>
+  <label for="product_range" class="form-label"><?php esc_html_e( 'Product Range (Nearest Thousand)', 'dokan-lite' ); ?><span class="dokan-tooltips-help tips" title="" data-original-title="Enter the estimated footfall/number of people your space can reach per week.">
+      <i class="fa fa-question-circle"></i>
+  </span></label>
   <input id="product_range" type="number" class="dokan-form-control" name="product_range" placeholder="<?php esc_attr__( '5000', 'dokan-lite' ); ?>" value="<?php echo esc_attr( $product_range ); ?>" min="0" step="1">
+  <span class="dokan-tooltips-help tips" title="" data-original-title="Enter the estimated footfall/number of people your space can reach per week.">
+      <i class="fa fa-question-circle"></i>
+  </span>
   <div class="dokan-product-title-alert dokan-hide">
    <?php esc_html_e( 'Please enter product range!', 'dokan-lite' ); ?>
   </div>

@@ -25,12 +25,11 @@
 }
 
 html .select2-container--open .select2-dropdown--below {
-  margin-top: 12px;
+  margin-top: -22px;
   border-top: 1px solid #151515;
 }
 
 html .select2-container--open .select2-dropdown--above {
-  margin-top: 32px;
   border-bottom: 1px solid #151515;
 }
 
@@ -49,6 +48,40 @@ html .side-panel {
   z-index: 9999;
 }
 
-html .side-panel div#ui-datepicker-div {
+html .archive div#ui-datepicker-div {
   z-index: 10000 !important;
+}
+
+@media all and (max-width: 767px){
+  .wpcf7-form .form-field-50 {
+    width: 100% !important;
+  }
+
+  .wpcf7-form input, .wpcf7-form select, .wpcf7-form textarea {
+     font-size: 0.8rem !important;
+  }
+}
+
+.dokan-dashboard .dokan-form-group.virtual-checkbox {
+  display: none !important;
+}
+
+#bookings_availability .table_grid, #bookings_pricing .table_grid, .bookings_extension .table_grid {
+  overflow-x: scroll;
+}
+
+#bookings_availability .table_grid .description {
+  padding-right: 128px;
+}
+
+.dokan-dashboard .dokan-dashboard-wrap #_wc_booking_duration {
+  width: 6rem !important;
+}
+
+html .dokan-settings-content .dokan-settings-area .dokan-banner {
+  margin: 32px 0;
+}
+
+html ul.thb-full-menu li.menu-item-mega-parent > ul.sub-menu {
+  top: 64px;
 }
