@@ -10,3 +10,45 @@
  License: Themeforest Split Licence
  License URI: -
 */
+
+.dokan-product-edit-form .form-accordion .dokan-linked-product-options .dokan-form-group, .dokan-product-edit-form .form-accordion .dokan-product-inventory .dokan-form-group {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dokan-product-edit-form .form-accordion .dokan-product-shipping-tax .dokan-form-group label, .dokan-product-edit-form .form-accordion .dokan-geolocation-options .dokan-form-group label {
+  width: 100%;
+}
+
+[id^="select2-product_cat-result"][id$="165"], [id^="select2-product_cat-result"][id$="207"] {
+  display: none;
+}
+
+html .select2-container--open .select2-dropdown--below {
+  margin-top: 12px;
+  border-top: 1px solid #151515;
+}
+
+html .select2-container--open .select2-dropdown--above {
+  margin-top: 32px;
+  border-bottom: 1px solid #151515;
+}
+
+.dokan-order-filter-serach .select2.select2-container--default .select2-selection--single, .dokan-order-filter-serach .select2.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 32px;
+  height: 32px;
+}
+
+.dokan-dashboard .dokan-dashboard-wrap .dokan-dashboard-content h3.entry-title {
+  font-size: 36px;
+  color: #3bb273;
+  border-bottom: 1px solid rgba(59,178,115,0.5);
+}
+
+html .side-panel {
+  z-index: 9999;
+}
+
+html .side-panel div#ui-datepicker-div {
+  z-index: 10000 !important;
+}

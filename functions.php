@@ -141,6 +141,22 @@ add_shortcode('account_header', 'account_header_shortcode');
 
 add_action( 'woocommerce_review_order_before_submit', 'bt_add_checkout_checkbox', 10 );
 
+
+/***************************************************************
+* Change Dokan Error Messages
+***************************************************************/
+
+add_filter( 'gettext', 'dokan_change_text', 20, 3 );
+
+function dokan_change_text( $translation, $text, $domain ){
+
+    if( $text === 'Error! Your account is not enabled for selling, please contact the admin' ) {
+        $text = 'Verify your account in settings before you set up your store.';
+    }
+
+    return $translation;
+}
+
 /***************************************************************
 * Advertising Material Acknowledgement
 ***************************************************************/
@@ -463,3 +479,17 @@ function go_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'go_widgets_init' );
+
+/***************************************************************
+* Registering Product Widget Area
+***************************************************************/
+
+add_filter('woocommerce_product_categories_widget_dropdown_args', 'widget_product_categories_disable_terms', 10, 1);
+add_filter('woocommerce_product_categories_widget_args', 'widget_product_categories_disable_terms', 10, 1);
+
+function widget_product_categories_disable_terms( $args ) {
+    // Excluding coma separated term IDs from product category
+    $args['exclude'] = array( 165 ); 
+
+    return $args;
+}
