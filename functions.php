@@ -393,6 +393,7 @@ function save_add_product_meta($product_id, $postdata){
 */
 
 add_action('dokan_product_edit_after_product_tags','show_on_edit_page',99,2);
+add_action('dokan_booking_edit_after_product_tags','show_on_edit_page',99,2);
 
 function show_on_edit_page($post, $post_id){
   $product_range = get_post_meta( $post_id, 'product_range', true );
@@ -489,7 +490,7 @@ add_filter('woocommerce_product_categories_widget_args', 'widget_product_categor
 
 function widget_product_categories_disable_terms( $args ) {
     // Excluding coma separated term IDs from product category
-    $args['exclude'] = array( 165 ); 
+    $args['exclude'] = array( 165 );
 
     return $args;
 }

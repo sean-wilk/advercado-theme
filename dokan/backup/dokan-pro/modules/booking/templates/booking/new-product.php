@@ -190,10 +190,9 @@ if ( ! empty( $_GET['errors'] ) ) {
                             echo str_replace( '<select', '<select data-placeholder="' . __( 'Select product tags', 'dokan' ) . '" multiple="multiple" ', $drop_down_tags );
                             ?>
                         </div>
+                    <?php do_action( 'dokan_booking_edit_after_product_tags', $post, $post_id ); ?>
 
                     </div><!-- .content-half-part -->
-
-                    <?php do_action( 'dokan_booking_edit_after_product_tags', $post, $post_id ); ?>
 
                     <div class="content-half-part featured-image">
 
